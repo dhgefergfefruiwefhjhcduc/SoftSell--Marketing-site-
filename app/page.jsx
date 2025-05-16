@@ -111,7 +111,7 @@ const lordiconSecondary = darkMode ? "#0e7490" : "#a5b4fc"; // cyan-700 or indig
     backdrop-blur-[5px]
   `}
           >
-            <div className="flex items-center space-x-2">
+            <div onClick={()=>handleScroll(0)} className="cursor-pointer flex items-center space-x-2">
               <img src="/logo.png" alt="SoftSell Logo" className="h-10 w-10 rounded-full" />
               <h1 className="text-2xl font-bold">SoftSell</h1>
             </div>
@@ -120,7 +120,7 @@ const lordiconSecondary = darkMode ? "#0e7490" : "#a5b4fc"; // cyan-700 or indig
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               transition={btnMotion}
-              className={`px-3 py-1 rounded ${darkMode ? 'bg-cyan-600 text-gray-900' : 'bg-indigo-600 text-white'}`}
+              className={`cursor-pointer px-3 py-1 rounded ${darkMode ? 'bg-cyan-600 text-gray-900' : 'bg-indigo-600 text-white'}`}
             >
               {darkMode ? 'Light Mode' : 'Dark Mode'}
             </motion.button>
@@ -164,7 +164,7 @@ const lordiconSecondary = darkMode ? "#0e7490" : "#a5b4fc"; // cyan-700 or indig
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   transition={btnMotion}
-                  className={`px-8 py-3 rounded-lg font-semibold shadow-lg transition-colors duration-300 z-10 ${darkMode
+                  className={`px-8 py-3 rounded-lg font-semibold shadow-lg transition-colors duration-300 z-10 cursor-pointer ${darkMode
                     ? "bg-cyan-600 opacity-[0.6] text-gray-900 hover:bg-cyan-500 hover:opacity-100"
                     : "bg-indigo-600 opacity-[0.6] text-white hover:bg-indigo-700 hover:opacity-100"
                     }`}
@@ -278,7 +278,7 @@ const lordiconSecondary = darkMode ? "#0e7490" : "#a5b4fc"; // cyan-700 or indig
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.5 }}
-                      className={`p-6 flex justify-center items-center flex-col rounded-xl shadow-md transition-colors duration-300 ${darkMode ? "bg-gray-700" : "bg-indigo-50"
+                      className={`p-6 cursor-pointer flex justify-center items-center flex-col rounded-xl shadow-md transition-colors duration-300 ${darkMode ? "bg-gray-700" : "bg-indigo-50"
                         }`}
                     >
                       <lord-icon
@@ -510,7 +510,7 @@ const lordiconSecondary = darkMode ? "#0e7490" : "#a5b4fc"; // cyan-700 or indig
                     <p className="text-sm mb-3">Get updates and license selling tips.</p>
                     <form className="flex flex-col space-y-2">
                       <input type="email" placeholder="Your email" className="px-3 py-2 rounded border outline-none focus:ring-2 focus:ring-cyan-500 transition-all duration-300 dark:bg-gray-800 dark:border-gray-600" />
-                      <button type="submit" className={`py-2 rounded font-semibold transition-colors duration-300 ${darkMode ? "bg-cyan-600 hover:bg-cyan-500 text-gray-900" : "bg-indigo-600 hover:bg-indigo-700 text-white"}`}>
+                      <button type="submit" className={`py-2 rounded cursor-pointer font-semibold transition-colors duration-300 ${darkMode ? "bg-cyan-600 hover:bg-cyan-500 text-gray-900" : "bg-indigo-600 hover:bg-indigo-700 text-white"}`}>
                         Subscribe
                       </button>
                     </form>
